@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.1.4">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant':'', 'session':'001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="fileList" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1280, 720]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="str" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="interactive-slider" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="MIDDLE_BUTTON" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <CodeComponent name="keyboard_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mykb = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});&amp;#10;mykb.start();" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# a keyboard object (must differ from object used online)&amp;#10;mykb = keyboard.Keyboard()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="# poll the keyboard&amp;#10;keys = mykb.getKeys(keysWatched, waitRelease = False, clear = False)&amp;#10;&amp;#10;if len(keys):# if a key has been pressed&amp;#10;    for i, key in enumerate(keysWatched):&amp;#10;        if keys[-1].name == key:&amp;#10;            if keys[-1].duration:&amp;#10;                status[i] = 'up'&amp;#10;                statusList.append('up')&amp;#10;            else:&amp;#10;                status[i] = 'down'&amp;#10;                statusList.append('down')&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="// Loop through keyboard events to update keyStates&amp;#10;let keyEvents = mykb.getEvents();&amp;#10;// Previous status of key we are currently watching&amp;#10;let previousStatus = status[currentKey];&amp;#10;// Key, timestamp, and keyDown, of current key event&amp;#10;let keyIndex, key, keyStatus;&amp;#10;for (let i = 0; i &lt; keyEvents.length; i++) {&amp;#10;    // Current key event&amp;#10;    key = keyEvents[i].pigletKey;&amp;#10;    keyStatus = keyEvents[i].status === Symbol.for('KEY_DOWN')? 'down': 'up';&amp;#10;    // Index of this key in keysWatched. NB findIndex not supported by IE&amp;#10;    keyIndex = keysWatched.indexOf(key);&amp;#10;    // Key is one that we watch; update its status&amp;#10;    if (keyIndex !== -1) {&amp;#10;        status[keyIndex] = keyStatus;&amp;#10;        statusList.append(keyStatus)&amp;#10;        console.log('keyStatus')&amp;#10;        console.log(statusList)&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;&amp;#10;// Clear keyboard events&amp;#10;mykb.clearEvents();" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="keyboard_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="slider_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((slider_granularity === 0)) {&amp;#10;    slider_granularity = 0.1;&amp;#10;}&amp;#10;thisFrame = 0;&amp;#10;sliding = 0;&amp;#10;oldRating = (- 1);&amp;#10;slider_data = [];&amp;#10;text_data.text = &quot; &quot;;&amp;#10;keysWatched = [&quot;left&quot;, &quot;right&quot;, &quot;return&quot;];&amp;#10;status = [&quot;up&quot;, &quot;up&quot;, &quot;up&quot;];&amp;#10;keyCount = 0;&amp;#10;statusList = [];&amp;#10;mouseRec = mouse.getPos();&amp;#10;currentKey = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if slider_granularity == 0:&amp;#10;    slider_granularity = .1&amp;#10;thisFrame = 0&amp;#10;sliding = 0&amp;#10;oldRating = -1&amp;#10;slider_data=[]&amp;#10;text_data.text=' '&amp;#10;&amp;#10;# which keys are we watching? (these will differ depending on handedness)&amp;#10;keysWatched=['left', 'right', 'return']&amp;#10;&amp;#10;# what are the assumed key statuses at the start of the routine&amp;#10;status =['up', 'up', 'up']&amp;#10;&amp;#10;# how many keyPresses have been counted so far&amp;#10;keyCount = 0 &amp;#10;statusList = []&amp;#10;&amp;#10;mouseRec=mouse.getPos()&amp;#10;currentKey=0" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="if slider.markerPos and status[2] == 'down':&amp;#10;    continueRoutine=False&amp;#10;elif slider.markerPos and mouse.isPressedIn(slider_shape):&amp;#10;    continueRoutine=False   &amp;#10;elif status[0] == 'down':&amp;#10;    sliding = -slider_granularity&amp;#10;elif status[1] == 'down':&amp;#10;    sliding = slider_granularity&amp;#10;# Move slider on hover&amp;#10;elif slider_shape.contains(mouse) and mouse.getPos()[slider_orientation] != mouseRec[slider_orientation]:&amp;#10;    mouseRec=mouse.getPos()&amp;#10;    slider.markerPos=mouseRec[slider_orientation]/slider_width*(slider_ticks[-1]-slider_ticks[0])+(slider_ticks[0]+slider_ticks[-1])/2&amp;#10;    sliding = 0&amp;#10;else:&amp;#10;    sliding = 0&amp;#10;&amp;#10;if sliding != 0:&amp;#10;    if oldRating == -1:&amp;#10;        slider.markerPos= (slider_ticks[0]+slider_ticks[-1])/2&amp;#10;    if thisFrame%slideSpeed == 0:&amp;#10;        slider.markerPos += sliding&amp;#10;&amp;#10;&amp;#10;&amp;#10;#Update slider text if needed&amp;#10;if slider.markerPos:&amp;#10;    if oldRating != slider.markerPos:&amp;#10;        text_slider.text = str(round(slider.markerPos,slider_decimals))&amp;#10;        oldRating = slider.markerPos&amp;#10;&amp;#10;thisFrame += 1&amp;#10;if slider.markerPos and thisFrame%slideSpeed==0:&amp;#10;    slider_data.append([round(oldRating,slider_decimals),int(t*1000)])&amp;#10;    text_data.pos=[.6,-.4+.017*len(slider_data)]&amp;#10;    text_data.text+='\n'+str(round(oldRating,slider_decimals))+' '+str(int(t*1000))&amp;#10;#    text_data.setPos(.5,len(slider_data)*.1-.4)&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((slider.markerPos &amp;&amp; (status[2] === &quot;down&quot;))) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    if ((slider.markerPos &amp;&amp; mouse.isPressedIn(slider_shape))) {&amp;#10;        continueRoutine = false;&amp;#10;    } else {&amp;#10;        if ((status[0] === &quot;down&quot;)) {&amp;#10;            sliding = (- slider_granularity);&amp;#10;        } else {&amp;#10;            if ((status[1] === &quot;down&quot;)) {&amp;#10;                sliding = slider_granularity;&amp;#10;            } else {&amp;#10;                if ((slider_shape.contains(mouse) &amp;&amp; (mouse.getPos()[slider_orientation] !== mouseRec[slider_orientation]))) {&amp;#10;                    mouseRec = mouse.getPos();&amp;#10;                    slider.markerPos = (((mouseRec[slider_orientation] / slider_width) * (slider_ticks.slice((- 1))[0] - slider_ticks[0])) + ((slider_ticks[0] + slider_ticks.slice((- 1))[0]) / 2));&amp;#10;                    sliding = 0;&amp;#10;                } else {&amp;#10;                    sliding = 0;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if ((sliding !== 0)) {&amp;#10;    if ((oldRating === (- 1))) {&amp;#10;        slider.markerPos = ((slider_ticks[0] + slider_ticks.slice((- 1))[0]) / 2);&amp;#10;    }&amp;#10;    if (((thisFrame % slideSpeed) === 0)) {&amp;#10;        slider.markerPos += sliding;&amp;#10;    }&amp;#10;}&amp;#10;if (slider.markerPos) {&amp;#10;    if ((oldRating !== slider.markerPos)) {&amp;#10;        text_slider.text = round(slider.markerPos, slider_decimals).toString();&amp;#10;        oldRating = slider.markerPos;&amp;#10;    }&amp;#10;}&amp;#10;thisFrame += 1;&amp;#10;if ((slider.markerPos &amp;&amp; ((thisFrame % slideSpeed) === 0))) {&amp;#10;    slider_data.append([round(oldRating, slider_decimals), Number.parseInt((t * 1000))]);&amp;#10;    text_data.pos = [0.6, ((- 0.4) + (0.017 * slider_data.length))];&amp;#10;    text_data.text += (((&quot;\n&quot; + round(oldRating, slider_decimals).toString()) + &quot; &quot;) + Number.parseInt((t * 1000)).toString());&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="thisExp.addData(&quot;All Responses&quot;, slider_data);&amp;#10;thisExp.addData(&quot;Final Response&quot;, round(slider.markerPos, slider_decimals));&amp;#10;console.log(&quot;All Responses&quot;, slider_data);&amp;#10;console.log(&quot;Final Response&quot;, round(slider.markerPos, slider_decimals));&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="thisExp.addData('All Responses',slider_data)&amp;#10;thisExp.addData('Final Response',round(slider.markerPos,slider_decimals))&amp;#10;print('All Responses',slider_data)&amp;#10;print('Final Response',round(slider.markerPos,slider_decimals))" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="slider_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <PolygonComponent name="slider_shape">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$[0,0,0]" valType="str" updates="constant" name="fillColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="fillColorSpace"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="$[0,0,0]" valType="str" updates="constant" name="lineColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="lineColorSpace"/>
+        <Param val="1" valType="code" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="slider_shape" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="constant" name="shape"/>
+        <Param val="(slider_width, slider_height)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <SliderComponent name="slider">
+        <Param val="White" valType="color" updates="constant" name="borderColor"/>
+        <Param val="LightGray" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flip"/>
+        <Param val="HelveticaBold" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="slider_granularity" valType="code" updates="constant" name="granularity"/>
+        <Param val="" valType="code" updates="None" name="initVal"/>
+        <Param val="'1','2','3','4','5'" valType="list" updates="constant" name="labels"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="slider" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="slider_orientation" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="constant" name="readOnly"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(slider_width, slider_height)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="condition" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeHistory"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRating"/>
+        <Param val="True" valType="bool" updates="constant" name="storeRatingTime"/>
+        <Param val="[]" valType="list" updates="constant" name="styleTweaks"/>
+        <Param val="['rating']" valType="fixedList" updates="constant" name="styles"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="(1,2,3,4,5)" valType="list" updates="constant" name="ticks"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </SliderComponent>
+      <TextComponent name="text_slider">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.06" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_slider" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, -.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val=" " valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_data">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_data" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, -.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val=" " valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <CodeComponent name="slider_code2">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="Idx = 0&amp;#10;for label in slider.labelObjs:&amp;#10;    label.height = .03  # Or whatever size you want&amp;#10;    label.wrapWidth = .2&amp;#10;    label.text=slider_labels[Idx]&amp;#10;    Idx+=1&amp;#10;slider.marker.color=marker_colour" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="slider.setLabels(slider_labels);&amp;#10;slider.setLabelHeight(.03);&amp;#10;//slider.setLabelWrapWidth(.2);&amp;#10;slider._markerColor = new util.Color(marker_colour);&amp;#10;slider._markerSize = (.1,.1);&amp;#10;//slider._onChange(true)();&amp;#10;//slider._setupSlider()" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="slider_code2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="start">
+      <CodeComponent name="code_JS">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="thisExp=psychoJS.experiment;&amp;#10;win=psychoJS.window;&amp;#10;event=psychoJS.eventManager;&amp;#10;shuffle = util.shuffle;&amp;#10;Array.prototype.append = [].push;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="experimentInit();" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_JS" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="slider_setup">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="slider_width=.8&amp;#10;slider_height=.1&amp;#10;slider_orientation=0&amp;#10;#Failing to set ticks or labels in code&amp;#10;slider_ticks=[1,2,3,4,5]&amp;#10;#slider_labels=&quot;Strongly Disagree,Disagree,Neither Agree nor Disagree,Agree,Strongly Agree&quot;&amp;#10;slider_labels=['0%','25%','50%','75%','100%']&amp;#10;slider_granularity=.1&amp;#10;slider_decimals=1&amp;#10;sliding = 0&amp;#10;slideSpeed = 10&amp;#10;oldRating=-1&amp;#10;marker_colour='blue'&amp;#10;marker_size=.1" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="slider_width = 0.8;&amp;#10;slider_height = 0.1;&amp;#10;slider_orientation = 0;&amp;#10;slider_ticks = [1, 2, 3, 4, 5];&amp;#10;slider_labels = [&quot;0%&quot;, &quot;25%&quot;, &quot;50%&quot;, &quot;75%&quot;, &quot;100%&quot;];&amp;#10;slider_granularity = 0.1;&amp;#10;slider_decimals = 1;&amp;#10;sliding = 0;&amp;#10;slideSpeed = 10;&amp;#10;oldRating = (- 1);&amp;#10;marker_colour = &quot;blue&quot;;&amp;#10;marker_size = 0.1;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="slider_setup" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse" valType="code" updates="None" name="name"/>
+        <Param val="False" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_2">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Use the mouse or arrow keys.&amp;#10;&amp;#10;Press enter or click the mouse to submit." valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <CodeComponent name="slider_colour">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="sliderColour='LightGray'" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="sliderColour = new util.Color(&quot;LightGray&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="slider_colour" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="end">
+      <TextComponent name="text_end">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_end" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Fin" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param val="'q'," valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="gap">
+      <TextComponent name="text">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val=" " valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="iSlider">
+      <PolygonComponent name="slider_background">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$[0,0,0]" valType="str" updates="constant" name="fillColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="fillColorSpace"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="$[0,0,0]" valType="str" updates="constant" name="lineColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="lineColorSpace"/>
+        <Param val="1" valType="code" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="slider_background" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="constant" name="shape"/>
+        <Param val="(slider_width, slider_height)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <CodeComponent name="keyboard_code_2">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mykb = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});&amp;#10;mykb.start();" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# a keyboard object (must differ from object used online)&amp;#10;mykb = keyboard.Keyboard()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="# poll the keyboard&amp;#10;keys = mykb.getKeys(keysWatched, waitRelease = False, clear = False)&amp;#10;&amp;#10;if len(keys):# if a key has been pressed&amp;#10;            for i, key in enumerate(keysWatched):&amp;#10;                if keys[-1].name == key and statusList[-1] != key:&amp;#10;                    if keys[-1].duration:&amp;#10;                        status[i] = 'up'&amp;#10;                        statusList.append(key)&amp;#10;                    else:&amp;#10;                        status[i] = 'down'&amp;#10;                        statusList.append(key)   &amp;#10;                else:&amp;#10;                    status[i] = 'up'&amp;#10;                    &amp;#10;        &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="// Loop through keyboard events to update keyStates&amp;#10;let keyEvents = mykb.getEvents();&amp;#10;// Previous status of key we are currently watching&amp;#10;let previousStatus = status[currentKey];&amp;#10;// Key, timestamp, and keyDown, of current key event&amp;#10;let keyIndex, key, keyStatus;&amp;#10;for (let i = 0; i &lt; keyEvents.length; i++) {&amp;#10;    // Current key event&amp;#10;    key = keyEvents[i].pigletKey;&amp;#10;    keyStatus = keyEvents[i].status === Symbol.for('KEY_DOWN')? 'down': 'up';&amp;#10;    // Index of this key in keysWatched. NB findIndex not supported by IE&amp;#10;    keyIndex = keysWatched.indexOf(key);&amp;#10;    // Key is one that we watch; update its status&amp;#10;    if (keyIndex !== -1) {&amp;#10;        status[keyIndex] = keyStatus;&amp;#10;        statusList.append(keyStatus)&amp;#10;        console.log('keyStatus')&amp;#10;        console.log(statusList)&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;&amp;#10;// Clear keyboard events&amp;#10;mykb.clearEvents();" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="keyboard_code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <CodeComponent name="iSlider_code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="ticks=[]&amp;#10;for Idx in range(len(slider_labels)):&amp;#10;    ticks.append(visual.TextStim(win=win, name='label'+str(Idx),&amp;#10;            text=slider_labels[Idx],&amp;#10;            font='Arial',&amp;#10;            pos=(slider_width*Idx/(len(slider_labels)-1)-slider_width/2,-1.333*slider_height),&amp;#10;            height=0.03, &amp;#10;            wrapWidth=slider_width/(len(slider_ticks)-1), &amp;#10;            ori=0, &amp;#10;            color=sliderColour&amp;#10;    ))&amp;#10;for Idx in range(len(slider_ticks)):&amp;#10;    ticks.append(visual.ShapeStim(&amp;#10;            win=win,&amp;#10;            name='tick'+str(Idx),&amp;#10;            lineColor=sliderColour,&amp;#10;            fillColor=sliderColour,&amp;#10;            vertices=[[-slider_height/20,slider_height/2],[slider_height/20,slider_height/2],[slider_height/20,-slider_height/2],[-slider_height/20,-slider_height/2]],&amp;#10;            pos=(slider_width*Idx/(len(slider_ticks)-1)-slider_width/2,0),&amp;#10;            lineWidth = 0,&amp;#10;            opacity = 1,&amp;#10;            interpolate = True&amp;#10;            ))&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="ticks = [];&amp;#10;for (var Idx = 0, _pj_a = slider_labels.length; (Idx &lt; _pj_a); Idx += 1) {&amp;#10;    ticks.append(new visual.TextStim({&quot;win&quot;: win, &quot;name&quot;: (&quot;label&quot; + Idx.toString()), &quot;text&quot;: slider_labels[Idx], &quot;font&quot;: &quot;Arial&quot;, &quot;pos&quot;: [(((slider_width * Idx) / (slider_labels.length - 1)) - (slider_width / 2)), ((- 1.333) * slider_height)], &quot;height&quot;: 0.03, &quot;wrapWidth&quot;: (slider_width / (slider_ticks.length - 1)), &quot;ori&quot;: 0, &quot;color&quot;: sliderColour}));&amp;#10;}&amp;#10;for (var Idx = 0, _pj_a = slider_ticks.length; (Idx &lt; _pj_a); Idx += 1) {&amp;#10;    ticks.append(new visual.ShapeStim({&quot;win&quot;: win, &quot;name&quot;: (&quot;tick&quot; + Idx.toString()), &quot;lineColor&quot;: sliderColour, &quot;fillColor&quot;: sliderColour, &quot;vertices&quot;: [[((- slider_height) / 20), (slider_height / 2)], [(slider_height / 20), (slider_height / 2)], [(slider_height / 20), ((- slider_height) / 2)], [((- slider_height) / 20), ((- slider_height) / 2)]], &quot;pos&quot;: [(((slider_width * Idx) / (slider_ticks.length - 1)) - (slider_width / 2)), 0], &quot;lineWidth&quot;: 0, &quot;opacity&quot;: 1, &quot;interpolate&quot;: true}));&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((slider_granularity === 0)) {&amp;#10;    slider_granularity = 0.1;&amp;#10;}&amp;#10;thisFrame = 0;&amp;#10;sliding = 0;&amp;#10;oldRating = (- 999);&amp;#10;slider_data = [];&amp;#10;newRating = (- 999);&amp;#10;keysWatched = [&quot;left&quot;, &quot;right&quot;, &quot;return&quot;];&amp;#10;status = [&quot;up&quot;, &quot;up&quot;, &quot;up&quot;];&amp;#10;keyCount = 0;&amp;#10;statusList = [];&amp;#10;mouseRec = mouse.getPos();&amp;#10;currentKey = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if slider_granularity == 0:&amp;#10;    slider_granularity = .1&amp;#10;thisFrame = 0&amp;#10;sliding = -1&amp;#10;oldRating = -999&amp;#10;slider_data=[]&amp;#10;newRating = -999&amp;#10;&amp;#10;# which keys are we watching? (these will differ depending on handedness)&amp;#10;keysWatched=['1', '2', '7', '8', 'return']&amp;#10;&amp;#10;# what are the assumed key statuses at the start of the routine&amp;#10;status =['up', 'up', 'up', 'up', 'up']&amp;#10;&amp;#10;# how many keyPresses have been counted so far&amp;#10;keyCount = 0 &amp;#10;statusList = ['-1']&amp;#10;&amp;#10;mouseRec=mouse.getPos()&amp;#10;currentKey=0&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="if thisFrame == 0:&amp;#10;    for tick in ticks:&amp;#10;        tick.setAutoDraw(True)&amp;#10;thisFrame += 1&amp;#10;# End routine with keyboard&amp;#10;if newRating &gt; -999 and status[4] == 'down':&amp;#10;    continueRoutine=False&amp;#10;# End routine with mouse&amp;#10;elif newRating &gt; -999 and mouse.isPressedIn(marker):&amp;#10;    continueRoutine=False&amp;#10;# Move slider with keyboard&amp;#10;elif status[0] != status[1]: #(status[0] == 'down' or  status[1] == 'up'):&amp;#10;    sliding = -slider_granularity&amp;#10;    newRating = round(newRating-abs(sliding),slider_decimals)&amp;#10;    #print(&quot;decrease rating&quot; + str(newRating))&amp;#10;elif status[2] != status[3]: # status[2] == 'down' or status[3] == 'down':&amp;#10;    sliding = slider_granularity&amp;#10;    newRating = round(newRating+abs(sliding)*.5,slider_decimals)&amp;#10;    print(&quot;increase rating&quot; + str(newRating))&amp;#10;    #sliding = -slider_granularity&amp;#10;    # Move slider with mouse&amp;#10;elif slider_background.contains(mouse) and mouse.getPos()[slider_orientation] != mouseRec[slider_orientation]:&amp;#10;    mouseRec=mouse.getPos()&amp;#10;    newRating = round((mouseRec[0]/slider_width*(slider_ticks[-1]-slider_ticks[0])+(slider_ticks[0]+slider_ticks[-1])/2),slider_decimals)&amp;#10;    sliding = 0&amp;#10;# Do nothing / keep sliding&amp;#10;else:&amp;#10;    sliding = -slider_granularity&amp;#10;    #print(&quot;no button pressed?&quot;)&amp;#10;            &amp;#10;# Change rating using keyboard&amp;#10;if sliding != 0 and thisFrame%slideSpeed == 0:&amp;#10;    # Allocate startpoint (midpoint or endpoint) if first interaction is keyboard&amp;#10;    if newRating == -999:&amp;#10;        newRating = round((slider_ticks[-1]),slider_decimals) #round((slider_ticks[0]+slider_ticks[-1])/2,slider_decimals)&amp;#10;    else:&amp;#10;        newRating = round(newRating+sliding,slider_decimals)&amp;#10;        status =['up', 'up', 'up', 'up', 'up']&amp;#10;        #print(&quot;status up&quot;)&amp;#10;        &amp;#10;# Check newRating is in range&amp;#10;if newRating &gt; slider_ticks[-1]:&amp;#10;    newRating=slider_ticks[-1]&amp;#10;elif newRating &gt; -999 and newRating &lt; slider_ticks[0]:&amp;#10;    newRating=slider_ticks[0]&amp;#10;&amp;#10;#Update slider text and marker if needed&amp;#10;if oldRating != newRating:&amp;#10;    slider_text.text = str(newRating)&amp;#10;    oldRating = newRating&amp;#10;    marker.setWidth(slider_width*( (newRating-slider_ticks[0]) / (slider_ticks[-1]-slider_ticks[0])))&amp;#10;    marker.setPos([ (slider_width-marker.width) / -2,0])&amp;#10;    &amp;#10;if newRating&gt;-999 and thisFrame%slideSpeed==0:&amp;#10;    slider_data.append([round(oldRating,slider_decimals),int(t*1000)])&amp;#10;#    text_data.setPos(.5,len(slider_data)*.1-.4)&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((thisFrame === 0)) {&amp;#10;    for (var tick, _pj_c = 0, _pj_a = ticks, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;        tick = _pj_a[_pj_c];&amp;#10;        tick.setAutoDraw(true);&amp;#10;    }&amp;#10;}&amp;#10;thisFrame += 1;&amp;#10;if (((newRating &gt; (- 999)) &amp;&amp; (status[2] === &quot;down&quot;))) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    if (((newRating &gt; (- 999)) &amp;&amp; mouse.isPressedIn(marker))) {&amp;#10;        continueRoutine = false;&amp;#10;    } else {&amp;#10;        if ((status[0] === &quot;down&quot;)) {&amp;#10;            sliding = (- slider_granularity);&amp;#10;        } else {&amp;#10;            if ((status[1] === &quot;down&quot;)) {&amp;#10;                sliding = slider_granularity;&amp;#10;            } else {&amp;#10;                if ((slider_background.contains(mouse) &amp;&amp; (mouse.getPos()[slider_orientation] !== mouseRec[slider_orientation]))) {&amp;#10;                    mouseRec = mouse.getPos();&amp;#10;                    newRating = round((((mouseRec[0] / slider_width) * (slider_ticks.slice((- 1))[0] - slider_ticks[0])) + ((slider_ticks[0] + slider_ticks.slice((- 1))[0]) / 2)), slider_decimals);&amp;#10;                    sliding = 0;&amp;#10;                } else {&amp;#10;                    sliding = 0;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;if (((sliding !== 0) &amp;&amp; ((thisFrame % slideSpeed) === 0))) {&amp;#10;    if ((newRating === (- 999))) {&amp;#10;        newRating = round(((slider_ticks[0] + slider_ticks.slice((- 1))[0]) / 2), slider_decimals);&amp;#10;    } else {&amp;#10;        newRating = round((newRating + sliding), slider_decimals);&amp;#10;    }&amp;#10;}&amp;#10;if ((newRating &gt; slider_ticks.slice((- 1))[0])) {&amp;#10;    newRating = slider_ticks.slice((- 1))[0];&amp;#10;} else {&amp;#10;    if (((newRating &gt; (- 999)) &amp;&amp; (newRating &lt; slider_ticks[0]))) {&amp;#10;        newRating = slider_ticks[0];&amp;#10;    }&amp;#10;}&amp;#10;if ((oldRating !== newRating)) {&amp;#10;    slider_text.text = newRating.toString();&amp;#10;    oldRating = newRating;&amp;#10;    marker.setPos([((slider_width * (newRating - ((slider_ticks[0] + slider_ticks.slice((- 1))[0]) / 2))) / 4), 0]);&amp;#10;}&amp;#10;if (((newRating &gt; (- 999)) &amp;&amp; ((thisFrame % slideSpeed) === 0))) {&amp;#10;    slider_data.append([round(oldRating, slider_decimals), Number.parseInt((t * 1000))]);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="thisExp.addData(&quot;All Responses&quot;, slider_data);&amp;#10;thisExp.addData(&quot;Final Response&quot;, newRating);&amp;#10;console.log(&quot;All Responses&quot;, slider_data);&amp;#10;console.log(&quot;Final Response&quot;, newRating);&amp;#10;for (var tick, _pj_c = 0, _pj_a = ticks, _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    tick = _pj_a[_pj_c];&amp;#10;    tick.setAutoDraw(false);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="thisExp.addData('All Responses',slider_data)&amp;#10;thisExp.addData('Final Response',newRating)&amp;#10;print('All Responses',slider_data)&amp;#10;print('Final Response',newRating)&amp;#10;for tick in ticks:&amp;#10;    tick.setAutoDraw(False)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="iSlider_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <PolygonComponent name="slider_bar">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="LightGray" valType="str" updates="constant" name="fillColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="fillColorSpace"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="$[1,0,0]" valType="str" updates="constant" name="lineColor"/>
+        <Param val="rgb" valType="str" updates="constant" name="lineColorSpace"/>
+        <Param val="0" valType="code" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="slider_bar" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="constant" name="shape"/>
+        <Param val="(slider_width, slider_height/10)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="marker">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$marker_colour" valType="str" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="$marker_colour" valType="str" updates="constant" name="lineColor"/>
+        <Param val="1" valType="code" updates="constant" name="lineWidth"/>
+        <Param val="72" valType="int" updates="constant" name="nVertices"/>
+        <Param val="marker" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="constant" name="shape"/>
+        <Param val="(slider_width, slider_height/20)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <TextComponent name="slider_text">
+        <Param val="white" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.06" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="slider_text" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, -.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val=" " valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="start"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="10" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="iSlider"/>
+    <Routine name="gap"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
